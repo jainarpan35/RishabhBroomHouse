@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishabh Broom House</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Existing CSS retained */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .whatsapp-float img {
+      height: 60px;
+      width: 60px;
+      cursor: pointer;
+    }
+    .qr-code-about {
+      float: right;
+      margin-left: 2rem;
+      animation: floatQR 2s infinite ease-in-out;
+      text-align: center;
+    }
+    .qr-code-about img {
+      max-width: 120px;
+    }
+    @keyframes floatQR {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .map-container {
+      text-align: center;
+      padding: 2rem;
+    }
+    .map-container iframe {
+      width: 90%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f8f8f8;
+    }
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .navbar li { margin: 0 1rem; }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      display: block;
+      transition: background 0.3s;
+    }
+    .navbar a:hover { background-color: #555; }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+    .about, .catalogue, .contact {
+      padding: 2rem;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 1rem;
+    }
+    .product-card {
+      width: 300px;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .product-card a button {
+      background-color: #25d366;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 0.5rem;
+    }
+    .product-card a button:hover {
+      background-color: #1da851;
+    }
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background-color: #218838;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    @media (max-width: 768px) {
+      .qr-code-about {
+        float: none;
+        margin: 2rem auto;
+      }
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+ .video-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    .video-wrapper {
+      width: 90%;
+      max-width: 720px;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+    .video-wrapper video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+    .video-controls {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .video-controls button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .video-controls button:hover {
+      background-color: #555;
+    }
+    @media (max-width: 768px) {
+      .qr-code-about {
+        float: none;
+        margin: 2rem auto;
+      }
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <img src="images/logo.jpg" alt="RBH Logo" style="height: 80px; margin-bottom: 1rem;">
+      <h1>Rishabh Broom House</h1>
+      <p>Premium Quality Grass Brooms since 2009 <br><span style="font-size:0.9rem;">उत्कृष्ट गुणवत्ता वाली झाड़ू, 2009 से आपके साथ</span></p>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#catalogue">Catalogue</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+ <div class="video-container">
+    <h2>Watch Our Story</h2>
+    <div class="video-wrapper">
+      <video id="rbhVideoPlayer" controls muted playsinline>
+        <source src="videos/rbh-intro.mp4" type="video/mp4">
+ 
+      </video>
+    </div>
+   
+  </div>
+<div class="video-container">
+    <h2>Watch Our Products</h2>
+    <div class="video-wrapper">
+      <video id="rbhVideoPlayer" controls muted playsinline>
+        <source src="videos/v1.mp4" type="video/mp4">
+ 
+      </video>
+    </div>
+   
+  </div>
+<div class="video-container">
+    <h2>Watch Our Catalogue</h2>
+    <div class="video-wrapper">
+      <video id="rbhVideoPlayer" controls muted playsinline>
+        <source src="videos/2.mp4" type="video/mp4">
+ 
+      </video>
+    </div>
+   
+  </div>
+
+
+  <section class="about" id="about">
+    <h2>About Rishabh Broom House</h2>
+    <div class="qr-code-about">
+      <p style="font-weight: bold; font-size: 0.9rem;">Scan WhatsApp</p>
+      <img src="images/whatsapp-qr.png" alt="WhatsApp QR">
+    </div>
+    <p>Rishabh Broom House is a leading manufacturer of eco-friendly, handmade grass brooms. With over a decade of experience, we serve homes and businesses across India with premium quality cleaning solutions.</p>
+    <p>ऋषभ ब्रूम हाउस एक प्रमुख निर्माता है इको-फ्रेंडली, हस्तनिर्मित घास की झाड़ूओं का। 2009 से हम पूरे भारत में घरों और व्यवसायों को उच्च गुणवत्ता वाली सफाई सुविधा प्रदान कर रहे हैं।</p>
+    <ul>
+      <li><strong>15+ Years of Experience:</strong> Trusted brand since 2009.</li>
+      <li><strong>Eco-Friendly:</strong> Made from natural grass without harmful chemicals.</li>
+      <li><strong>Durability:</strong> Long-lasting and easy-to-use brooms for all surfaces.</li>
+      <li><strong>Variety:</strong> Multiple types available for domestic and commercial use.</li>
+      <li><strong>Customer Support:</strong> Easy to order on WhatsApp.</li>
+    </ul>
+  </section>
+
+  <section class="catalogue" id="catalogue">
+    <h2>Our Product Catalogue</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="images/broom1.jpg" alt="Regular Grass Broom">
+        <h3>Regular Grass Broom</h3>
+        <p>Durable and lightweight for everyday cleaning.</p>
+        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Regular%20Grass%20Broom" target="_blank">
+          <button>Buy on WhatsApp</button>
+        </a>
+      </div>
+      <div class="product-card">
+        <img src="images/broom2.jpg" alt="Heavy Duty Broom">
+        <h3>Heavy Duty Grass Broom</h3>
+        <p>Ideal for outdoor and rough surface sweeping.</p>
+        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Heavy%20Duty%20Grass%20Broom" target="_blank">
+          <button>Buy on WhatsApp</button>
+        </a>
+      </div>
+      <div class="product-card">
+        <img src="images/broom3.jpg" alt="Premium Broom">
+        <h3>Premium Decorated Broom</h3>
+        <p>Stylish yet functional, for modern homes.</p>
+        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Premium%20Decorated%20Broom" target="_blank">
+          <button>Buy on WhatsApp</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us / संपर्क करें</h2>
+    <form action="https://formspree.io/f/mldnaqed" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="contact number" placeholder="Your Contact Number">
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="map-container">
+      <h3>Find Us on Google Maps</h3>
+      <iframe src="https://www.google.com/maps/embed?..." allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rishabh Broom House, Banswara. All rights reserved.</p>
+    <p style="margin-top: 1rem; font-weight: bold;">Email: <a href="mailto:jainarpan35@gmail.com">jainarpan35@gmail.com</a></p>
+    <p style="margin-top: 0.5rem;">Address: Opp. Forest Office, Dahod Road, Banswara</p>
+    <p>Contact: <a href="tel:+919461331332">9461331332</a></p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/919461331332" target="_blank">
+    <img src="images/whatsapp-icon.png" alt="WhatsApp Chat">
+  </a>
+
+  <script>
+    $(document).ready(function () {
+      $('#contact-form').on('submit', function (e) {
+        e.preventDefault();
+        $('#form-message').text('Thank you for contacting us! We will respond shortly via email.');
+        $('#contact-form')[0].reset();
+      });
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('.navbar').addClass('sticky');
+        } else {
+          $('.navbar').removeClass('sticky');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
