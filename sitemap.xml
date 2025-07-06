@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
   <url>
     <loc>https://rbhbanswara.in/</loc>
     <lastmod>2025-07-06</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <!-- Broom Products Page -->
   <url>
-    <loc>https://rbhbanswara.in/#about</loc>
+    <loc>https://rbhbanswara.in/rbh.html</loc>
     <lastmod>2025-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- Sudha Hing Page -->
   <url>
-    <loc>https://rbhbanswara.in/#catalogue</loc>
+    <loc>https://rbhbanswara.in/hing.html</loc>
     <lastmod>2025-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- Contact Section (if separate page, else skip) -->
+  <!--
   <url>
-    <loc>https://rbhbanswara.in/#contact</loc>
+    <loc>https://rbhbanswara.in/contact.html</loc>
     <lastmod>2025-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
+  -->
 
 </urlset>
