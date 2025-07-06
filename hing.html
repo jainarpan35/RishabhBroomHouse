@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style>
-    body {
+body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
@@ -58,37 +58,45 @@
       padding: 2rem;
       background-color: #f8f8f8;
     }
-    .navbar {
-      background-color: #333;
-      overflow: hidden;
-    }
-    .navbar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .navbar li {
-      margin: 0 1rem;
-    }
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      padding: 1rem;
-      display: block;
-      transition: background 0.3s;
-    }
-    .navbar a:hover {
-      background-color: #555;
-    }
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 100;
-    }
+
+
+  .navbar {
+    background-color: #e3f2fd; /* Very light blue */
+    overflow: hidden;
+    transition: background-color 0.3s;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar li {
+    margin: 0 1rem;
+  }
+
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .navbar a:hover {
+    background-color: white;
+    color: black;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
     .about, .catalogue, .contact {
       padding: 2rem;
     }
@@ -143,6 +151,8 @@
         flex-direction: column;
         align-items: center;
       }
+    }
+
     }
   </style>
 </head>
@@ -263,31 +273,45 @@
       padding: 2rem;
       background-color: #f8f8f8;
     }
-    .navbar {
-      background-color: #333;
-      overflow: hidden;
-    }
-    .navbar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .navbar li {
-      margin: 0 1rem;
-    }
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      padding: 1rem;
-      display: block;
-      transition: background 0.3s;
-    }
-    .navbar a:hover {
-      background-color: #555;
-    }
+ .navbar {
+    background-color: #e3f2fd; /* Very light blue */
+    overflow: hidden;
+    transition: background-color 0.3s;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar li {
+    margin: 0 1rem;
+  }
+
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .navbar a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #e3f2fd !important; /* Ensure it stays light blue on scroll */
+  }
     .sticky {
       position: fixed;
       top: 0;
@@ -367,62 +391,109 @@
 
 <body>
   <section class="catalogue" id="catalogue">
-    <h2>Our Product Catalogue</h2>
-    <div class="products">
-      <div class="product-card">
-        <img src="images/hing1.jpg" alt="Hing Jar">
-        <h3>Sudha Hing 50g Jar</h3>
-        <p>Rich aroma, perfect for home kitchens.</p>
-        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%2050g%20Jar" target="_blank">
-          <button>Buy on WhatsApp</button>
-        </a>
-      </div>
-      <div class="product-card">
-        <img src="images/hing2.jpg" alt="Hing Sachets">
-        <h3>Sudha Hing Sachets (10 Pack)</h3>
-        <p>Convenient, travel-friendly, and flavorful.</p>
-        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%20Sachets%20(10%20Pack)" target="_blank">
-          <button>Buy on WhatsApp</button>
-        </a>
-      </div>
-      <div class="product-card">
-        <img src="images/hing3.jpg" alt="Premium Hing">
-        <h3>Sudha Premium Hing 100g</h3>
-        <p>Strongest aroma for restaurant-grade taste.</p>
-        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Premium%20Hing%20100g" target="_blank">
-          <button>Buy on WhatsApp</button>
-        </a>
-      </div>
-  <div class="product-card">
-        <img src="images/hing1.jpg" alt="Hing Jar">
-        <h3>Sudha Hing 50g Jar</h3>
-        <p>Rich aroma, perfect for home kitchens.</p>
-        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%2050g%20Jar" target="_blank">
-          <button>Buy on WhatsApp</button>
-        </a>
-      </div>
-      <div class="product-card">
-        <img src="images/hing2.jpg" alt="Hing Sachets">
-        <h3>Sudha Hing Sachets (10 Pack)</h3>
-        <p>Convenient, travel-friendly, and flavorful.</p>
-        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%20Sachets%20(10%20Pack)" target="_blank">
-          <button>Buy on WhatsApp</button>
-        </a>
-      </div>
-      <div class="product-card">
-        <img src="images/hing3.jpg" alt="Premium Hing">
-        <h3>Sudha Premium Hing 100g</h3>
-        <p>Strongest aroma for restaurant-grade taste.</p>
-        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Premium%20Hing%20100g" target="_blank">
-          <button>Buy on WhatsApp</button>
-        </a>
-      </div>
-
+  <h2>Our Product Catalogue</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="images/hing1.jpg" alt="Hing Jar">
+      <h3>Sudha Hing 50g Jar</h3>
+      <p>Rich aroma, perfect for home kitchens.</p>
+      <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%2050g%20Jar" target="_blank">
+        <button>Buy on WhatsApp</button>
+      </a>
     </div>
-  </section>
+    <div class="product-card">
+      <img src="images/hing2.jpg" alt="Hing Sachets">
+      <h3>Sudha Hing Dudhiya (50 Pack)</h3>
+      <p>Convenient, travel-friendly, and flavorful.</p>
+      <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%20Sachets%20(10%20Pack)" target="_blank">
+        <button>Buy on WhatsApp</button>
+      </a>
+    </div>
+    <div class="product-card">
+      <img src="images/hing3.jpg" alt="Premium Hing">
+      <h3>Sudha Premium Hing 100g</h3>
+      <p>Strongest aroma for restaurant-grade taste.</p>
+      <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Premium%20Hing%20100g" target="_blank">
+        <button>Buy on WhatsApp</button>
+      </a>
+    </div>
+    <div class="product-card">
+      <img src="images/hing4.jpg" alt="Hing Jar">
+      <h3>Sudha Hing 200g Jar</h3>
+      <p>Ideal for frequent cooking needs.</p>
+      <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%20200g%20Jar" target="_blank">
+        <button>Buy on WhatsApp</button>
+      </a>
+    </div>
+    <div class="product-card">
+      <img src="images/hing5.jpg" alt="Bulk Hing">
+      <h3>Sudha Hing Crystal</h3>
+      <p>Best value for restaurants and caterers.</p>
+      <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%20Bulk%20Pack" target="_blank">
+        <button>Buy on WhatsApp</button>
+      </a>
+    </div>
+<div class="product-card">
+      <img src="images/hing6.jpg" alt="Bulk Hing">
+      <h3>Sudha Hing Bulk Pack</h3>
+      <p>Best value for restaurants and caterers.</p>
+      <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%20Bulk%20Pack" target="_blank">
+        <button>Buy on WhatsApp</button>
+      </a>
+    </div>
+
+<div class="product-card">
+      <img src="images/hing7.jpg" alt="Hing Jar">
+      <h3>Sudha Hing 50g Jar</h3>
+      <p>Rich aroma, perfect for home kitchens.</p>
+      <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%2050g%20Jar" target="_blank">
+        <button>Buy on WhatsApp</button>
+      </a>
+    </div>
+    <div class="product-card">
+      <img src="images/hing8.jpg" alt="Hing Sachets">
+      <h3>Sudha Hing Dudhiya (50 Pack)</h3>
+      <p>Convenient, travel-friendly, and flavorful.</p>
+      <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%20Sachets%20(10%20Pack)" target="_blank">
+        <button>Buy on WhatsApp</button>
+      </a>
+    </div>
+    <div class="product-card">
+      <img src="images/hing9.jpg" alt="Premium Hing">
+      <h3>Sudha Premium Hing 100g</h3>
+      <p>Strongest aroma for restaurant-grade taste.</p>
+      <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Premium%20Hing%20100g" target="_blank">
+        <button>Buy on WhatsApp</button>
+      </a>
+    </div>
+    <div class="product-card">
+      <img src="images/hing10.jpg" alt="Hing Jar">
+      <h3>Sudha Hing 200g Jar</h3>
+      <p>Ideal for frequent cooking needs.</p>
+      <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%20200g%20Jar" target="_blank">
+        <button>Buy on WhatsApp</button>
+      </a>
+    </div>
+    <div class="product-card">
+      <img src="images/hing11.jpg" alt="Bulk Hing">
+      <h3>Sudha Hing Crystal</h3>
+      <p>Best value for restaurants and caterers.</p>
+      <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%20Bulk%20Pack" target="_blank">
+        <button>Buy on WhatsApp</button>
+      </a>
+    </div>
+<div class="product-card">
+      <img src="images/hing12.jpg" alt="Bulk Hing">
+      <h3>Sudha Hing Bulk Pack</h3>
+      <p>Best value for restaurants and caterers.</p>
+      <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%20Bulk%20Pack" target="_blank">
+        <button>Buy on WhatsApp</button>
+      </a>
+    </div>
 
 
-  <section class="contact" id="contact">
+  </div>
+</section>  <section class="contact" id="contact">
     <h2>Contact Us / संपर्क करें</h2>
     <form action="https://formspree.io/f/mldnaqed" method="POST">
   <input type="text" name="name" placeholder="Your Name" required>
@@ -440,12 +511,21 @@
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Sudha Hing, Banswara. All rights reserved.</p>
- <p style="margin-top: 1rem; font-weight: bold;">Email: <a href="mailto:jainarpan35@gmail.com">jainarpan35@gmail.com</a></p>
-    <p style="margin-top: 0.5rem;">Address: Rishabh Broom House, Opp. Forest Office, Dahod Road, Banswara</p>
-    <p>Contact: <a href="tel:+919461331332">9461331332</a></p>
-  </footer>
+<footer style="background-color: #222; color: white; text-align: center; padding: 1rem; position: relative;">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+    <img src="images/4.jpg" alt="Guruji" style="width: 80px; height: 80px; object-fit: cover; border-radius: 10px;">
+    <div>
+      <p>&copy; 2025 Sudha Hing, Banswara. All rights reserved.</p>
+      <p style="margin-top: 1rem; font-weight: bold;">Email: <a href="mailto:jainarpan35@gmail.com" style="color: #ffffff;">jainarpan35@gmail.com</a></p>
+      <p style="margin-top: 0.5rem;">Address: Rishabh Broom House, Opp. Forest Office, Dahod Road, Banswara</p>
+      <p>Contact: <a href="tel:+919461331332" style="color: #ffffff;">9461331332</a></p>
+    </div>
+  </div>
+</footer>
+
+
+
+
 <div style="display:none">
   <h2>Sudha Hing - Wagad Ki Pehli Pasand</h2>
   <p>
@@ -513,6 +593,16 @@
       });
     });
   </script>
+<script>
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      $('.navbar').addClass('sticky');
+    } else {
+      $('.navbar').removeClass('sticky');
+    }
+  });
+</script>
+
 </body>
 
 </html>
