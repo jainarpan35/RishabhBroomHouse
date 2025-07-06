@@ -9,62 +9,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Broom Products Page -->
-  <url>
-    <loc>https://rbhbanswara.in/rbh.html</loc>
-    <lastmod>2025-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Sudha Hing Page -->
-  <url>
-    <loc>https://rbhbanswara.in/hing.html</loc>
-    <lastmod>2025-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Contact Section (if separate page, else skip) -->
-  <!--
-  <url>
-    <loc>https://rbhbanswara.in/contact.html</loc>
-    <lastmod>2025-07-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  -->
-<url>
-<loc>https://rbhbanswara.in/</loc>
-<lastmod>2025-07-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1.0</priority>
-</url>
-<url>
-<loc>https://rbhbanswara.in/#about</loc>
-<lastmod>2025-07-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rbhbanswara.in/#catalogue</loc>
-<lastmod>2025-07-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rbhbanswara.in/#contact</loc>
-<lastmod>2025-07-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-    <loc>https://rbhbanswara.in/</loc>
-    <lastmod>2025-07-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
   <!-- Grass Broom Page -->
   <url>
     <loc>https://rbhbanswara.in/rbh.html</loc>
@@ -79,6 +23,26 @@
     <lastmod>2025-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Optional internal anchors (not necessary but allowed) -->
+  <url>
+    <loc>https://rbhbanswara.in/#about</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://rbhbanswara.in/#catalogue</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://rbhbanswara.in/#contact</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
