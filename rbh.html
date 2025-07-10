@@ -415,6 +415,35 @@ footer {
         width: 90%;
       }
     }
+.simple-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background: #e3f2fd;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.95rem;
+}
+
+.simple-nav a {
+  text-decoration: none;
+  color: #0d47a1;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.simple-nav a:hover {
+  background: #bbdefb;
+}
+.simple-nav a.active {
+  background: #64b5f6;
+  color: white;
+}
+
+
   </style>
 </head>
 
@@ -430,6 +459,11 @@ footer {
 
   <img src="images/1.jpg" alt="Guruji" class="guru-img">
 </header>
+
+<nav class="simple-nav">
+  <a href="index.html" id="home-tab">Home</a>
+  <a href="hing.html" id="hing-tab">Sudha Hing</a>
+</nav>
 
   <section class="about" style="padding: 3rem 1rem; background: linear-gradient(120deg, #ffffff, #f0f8ff); text-align: center;">
   <h2 style="font-size: 2.2rem; color: #0d47a1; margin-bottom: 1rem;">Welcome to <span style="color: #2e7d32;">Rishabh Broom House</span> – Banswara</h2>
@@ -618,6 +652,18 @@ footer {
     document.getElementById('lightboxOverlay').style.display = 'none';
   }
 </script>
+<script>
+  // Detect current file name
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Apply 'active' class based on current file
+  if (currentPage === "index.html" || currentPage === "") {
+    document.getElementById("home-tab").classList.add("active");
+  } else if (currentPage === "hing.html") {
+    document.getElementById("hing-tab").classList.add("active");
+  }
+</script>
+
 </body>
 
 </html>
