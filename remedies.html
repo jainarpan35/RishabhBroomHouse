@@ -2,199 +2,484 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Remedies | Rishabh Broom House</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hing Remedies & Natural Health Benefits | Sudha Hing by Rishabh Broom House</title>
+    <meta name="description"
+        content="Explore the powerful natural remedies of Hing (Asafoetida). Discover its health benefits for digestion, respiratory issues, and more, with traditional recipes and Ayurvedic insights from Sudha Hing.">
+    <meta name="keywords"
+        content="hing, asafoetida, hing remedies, ayurvedic remedies, digestive health, hing benefits, natural health, rishabh broom house, sudha hing, home remedies, hing for gas, hing for bloating, hing recipes">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Hing: A Comprehensive Guide to Traditional Remedies and Health Benefits",
+          "image": "images/hing-plant.jpeg",
+          "author": {
+            "@type": "Organization",
+            "name": "Rishabh Broom House"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Sudha Hing",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "images/sudha-hing-logo.png"
+            }
+          },
+          "datePublished": "2025-08-10",
+          "description": "Discover the centuries-old wisdom of Hing (Asafoetida) with traditional remedies, health benefits, and Ayurvedic insights. Learn how to use this powerful spice for better digestion and overall wellness."
+        }
+    </script>
+    <style>
+        :root {
+            --primary-color: #3b5998;
+            --secondary-color: #f7a048;
+            --bg-light: #f4f7f9;
+            --text-dark: #333;
+            --text-light: #666;
+        }
 
-    header {
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
-    nav {
-      background: #eee;
-      padding: 1rem;
-      text-align: center;
-    }
+        header {
+            background: url('images/hd-hing-bg.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+        }
 
-    nav a {
-      text-decoration: none;
-      margin: 0 1rem;
-      color: #1e3c72;
-      font-weight: 600;
-    }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 4.5rem);
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
 
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-      background: white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-      margin-top: 2rem;
-      border-radius: 8px;
-    }
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 1rem auto 0;
+            opacity: 0.9;
+        }
 
-    section h2 {
-      color: #1e3c72;
-      margin-top: 1.5rem;
-    }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 2rem;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
 
-    img.inline {
-      display: block;
-      margin: 1rem auto;
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            background-color: #e58d34;
+        }
 
-    ul {
-      padding-left: 1.5rem;
-    }
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-    .recipe {
-      background: #f0f8ff;
-      padding: 1rem;
-      border-left: 4px solid #1e3c72;
-      margin-top: 1rem;
-    }
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+        }
 
-    .print-button, .top-button {
-      display: block;
-      width: max-content;
-      margin: 2rem auto;
-      background: #1e3c72;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      text-align: center;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        nav a:hover {
+            color: var(--secondary-color);
+        }
 
-    footer {
-      background-color: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            padding: 2rem 0;
+        }
 
-    @media print {
-      nav, .print-button, .top-button {
-        display: none;
-      }
-    }
-  </style>
+        @media (min-width: 900px) {
+            .main-content {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        .article-content {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .article-content h2,
+        .article-content h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+            display: inline-block;
+            padding-bottom: 0.2rem;
+        }
+
+        .article-content img {
+            display: block;
+            margin: 1.5rem 0;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .article-content img:hover {
+            transform: scale(1.02);
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .recipe {
+            background: #f0f8ff;
+            padding: 1.5rem;
+            border-left: 5px solid var(--primary-color);
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .recipe:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe h4 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .sidebar {
+            padding: 2rem;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .sidebar h3 {
+            font-family: 'Playfair Display', serif;
+            border-bottom: 2px solid white;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            background: rgba(255, 255, 255, 0.1);
+            margin-bottom: 0.5rem;
+            padding: 0.75rem;
+            border-radius: 5px;
+        }
+
+        .disclaimer {
+            background-color: #fff8e1;
+            border-left: 5px solid #ffc107;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .disclaimer p {
+            margin: 0;
+            color: #856404;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .print-button,
+        .top-button {
+            display: block;
+            width: fit-content;
+            margin: 2rem auto;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .print-button:hover,
+        .top-button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .table-of-contents {
+            padding: 1.5rem;
+            background: #eef1f6;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .table-of-contents h3 {
+            margin-top: 0;
+            border: none;
+        }
+
+        .table-of-contents ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+        
+        .table-of-contents a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .table-of-contents a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        @media print {
+            nav,
+            .print-button,
+            .top-button,
+            .cta-button,
+            .sidebar {
+                display: none;
+            }
+
+            body {
+                background: #fff;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .article-content {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <h1>Hing: Traditional Wisdom & Natural Remedies</h1>
-    <p>Discover the health benefits and cultural legacy of Asafoetida</p>
-  </header>
 
-  <nav>
-    <a href="hing.html">Sudha Hing Home</a>
-    <a href="#" onclick="window.print()">Print This Page</a>
-   
-  </nav>
+    <header>
+        <div class="container" data-aos="fade-up">
+            <h1>The Timeless Power of Hing</h1>
+            <p>Unlocking Natural Remedies and Ayurvedic Secrets of Asafoetida with Sudha Hing</p>
+            <a href="#buy-now" class="cta-button">Explore Our Hing Products</a>
+        </div>
+    </header>
 
-  <section id="top" data-aos="fade-up">
-    <h2>Introduction to Hing</h2>
-    <p>Hing, also known as asafoetida, is a spice used for centuries in Indian cuisine and medicine. With its distinctive aroma and flavor, hing is a staple in Indian cooking and a powerhouse of therapeutic benefits. This resinous spice is obtained from the roots of <em>Ferula assafoetida</em>, a perennial herb found in Iran, Afghanistan, and parts of India.</p>
-    <img src="images/hing-plant.jpeg" alt="Hing Plant" class="inline">
-    <p>Also known by regional names such as Hingu, Inguva, and Perungayam, hing is celebrated for aiding digestion, treating respiratory ailments, and enhancing reproductive health. In Ayurveda, hing is revered for balancing doshas and promoting vitality.</p>
-  </section>
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="#hing-benefits">Benefits</a>
+            <a href="#hing-remedies">Remedies</a>
+            <a href="#hing-in-ayurveda">Ayurveda</a>
+            <a href="#" onclick="window.print()">Print Page</a>
+        </div>
+    </nav>
 
-  <section data-aos="fade-up">
-    <h2>Medicinal Benefits of Hing</h2>
-    <ul>
-      <li><strong>Digestive Aid:</strong> Eases bloating, flatulence, and promotes smooth bowel movements.</li>
-      <li><strong>Respiratory Relief:</strong> Effective against asthma, cough, and nasal congestion.</li>
-      <li><strong>Reproductive Support:</strong> Boosts fertility and balances hormones.</li>
-      <li><strong>Diabetes Control:</strong> Helps regulate blood sugar by improving insulin sensitivity.</li>
-      <li><strong>Cardiac Health:</strong> Reduces blood pressure and prevents arterial blockages.</li>
-      <li><strong>Menstrual Relief:</strong> Eases cramps and regulates cycles.</li>
-      <li><strong>Anti-inflammatory:</strong> Soothes insect bites, headaches, and muscle pain.</li>
-    </ul>
-    <img src="images/hing-benefits.jpg" alt="Hing Benefits" class="inline">
-  </section>
+    <main class="container main-content">
 
-  <section data-aos="fade-up">
-    <h2>Hing Remedies and Home Treatments</h2>
-    <div class="recipe">
-      <h3>Lemon-Hing Water</h3>
-      <p><strong>Ingredients:</strong> 2 tbsp hing, 1 tbsp jeera, ½ tbsp lemon juice, 1-2 cups water</p>
-      <p><strong>Method:</strong> Boil water with hing and jeera, let cool, add lemon juice. Drink warm.</p>
-      <img src="images/lemon-hing-water.jpg" alt="Lemon Hing Water" class="inline">
-    </div>
+        <article class="article-content">
+            <div id="top" data-aos="fade-up">
+                <h2>Introduction to Hing: The Divine Spice</h2>
+                <p>Hing, also known as **asafoetida**, is more than just a pungent spice used in Indian cooking. This potent resin, derived from the roots of the <em>Ferula assafoetida</em> plant, has been a cornerstone of traditional medicine for centuries. Revered for its digestive properties and therapeutic benefits, Hing is a true powerhouse of natural wellness.</p>
+                <figure>
+                    <img src="images/hing-plant.jpeg" alt="Hing plant, scientifically known as Ferula assafoetida"
+                        class="inline">
+                    <figcaption>The <em>Ferula assafoetida</em> plant, the source of our potent Hing.</figcaption>
+                </figure>
+                <p>Celebrated by various cultures for its ability to transform simple dishes and alleviate common ailments, Hing is known by regional names such as Hingu, Inguva, and Perungayam. In Ayurveda, it holds a special place for its ability to balance doshas and promote vitality. This guide explores how to harness the full potential of this incredible spice.</p>
+            </div>
 
-    <div class="recipe">
-      <h3>Masala Chaas (Spiced Buttermilk)</h3>
-      <p>Made with mint, coriander, hing, ginger powder, yogurt, and spices — blended into a cooling summer drink.</p>
-      <img src="images/masala-chaas.jpeg" alt="Masala Chaas" class="inline">
-    </div>
+            <hr>
 
-    <div class="recipe">
-      <h3>Hing Jeera Aloo Curry</h3>
-      <p>Flavorful potato curry with a hing and cumin tempering. A perfect accompaniment to Indian bread or rice.</p>
-      <img src="images/hing-aloo.jpg" alt="Hing Jeera Aloo Curry" class="inline">
-    </div>
-  </section>
+            <div class="table-of-contents">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#hing-benefits">Medicinal Benefits of Hing</a></li>
+                    <li><a href="#hing-remedies">Traditional Hing Remedies</a></li>
+                    <li><a href="#hing-in-ayurveda">Hing in Ayurveda</a></li>
+                    <li><a href="#precautions">Precautions and Side Effects</a></li>
+                </ul>
+            </div>
 
-  <section data-aos="fade-up">
-    <h2>Hing in Ayurveda</h2>
-    <p>Referred to as <em>Ramaha</em>, <em>Ugragandha</em>, and <em>Sahasravedhi</em> in Sanskrit, hing has been used to treat digestive issues, dental problems, respiratory conditions, and even mental clarity. It balances <strong>Vata</strong> and <strong>Kapha</strong> doshas and increases <strong>Pitta</strong>.</p>
-    <p>Forms of use include:</p>
-    <ul>
-      <li><strong>Hingvastak Churna</strong> – Blend of 8 herbs to improve digestion</li>
-      <li><strong>Hing Tailam</strong> – Oil for massage and respiratory relief</li>
-      <li><strong>Hing Capsules & Powder</strong> – Available in supplements for daily use</li>
-    </ul>
-    <img src="images/hing-ayurveda.jpg" alt="Hing Ayurveda" class="inline">
-  </section>
+            <section id="hing-benefits" data-aos="fade-up">
+                <h2>The Proven Medicinal Benefits of Hing</h2>
+                <p>Beyond its culinary use, Hing is a medicinal treasure. Its unique chemical compounds offer a range of health benefits:</p>
+                <ul>
+                    <li><strong>Powerful Digestive Aid:</strong> Hing is renowned for its carminative properties, which means it helps reduce gas, bloating, and flatulence. It stimulates the pancreas to produce digestive enzymes, ensuring smoother digestion.</li>
+                    <li><strong>Natural Anti-inflammatory:</strong> Its anti-inflammatory compounds can help soothe painful conditions, from headaches and muscle aches to menstrual cramps. A paste of hing can be applied topically for quick relief.</li>
+                    <li><strong>Respiratory Relief:</strong> Acting as a natural expectorant, hing helps clear respiratory passages. It is often used in traditional remedies for asthma, bronchitis, and persistent coughs.</li>
+                    <li><strong>Blood Sugar Regulation:</strong> Some studies suggest that hing may help regulate blood sugar levels by improving insulin sensitivity, making it a valuable addition for those managing diabetes.</li>
+                    <li><strong>Menstrual and Reproductive Health:</strong> Hing is traditionally used to alleviate painful menstrual cramps and promote a regular cycle. It's also believed to support reproductive health in both men and women.</li>
+                </ul>
+                <img src="images/hing-benefits.jpg" alt="Infographic showing the health benefits of asafoetida" class="inline">
+            </section>
 
-  <section data-aos="fade-up">
-    <h2>Precautions and Side Effects</h2>
-    <ul>
-      <li>Pregnant and breastfeeding women should avoid or consult a doctor before using hing.</li>
-      <li>Excessive consumption can lead to diarrhea, gas, or allergic reactions.</li>
-      <li>Always consume in moderation or under medical guidance.</li>
-    </ul>
-  </section>
+            <hr>
 
-  <section data-aos="fade-up">
-    <h2>Conclusion</h2>
-    <p>Hing is more than just a kitchen spice — it's a centuries-old remedy rooted in Ayurvedic tradition. Whether added to your meals or used in therapeutic remedies, hing promotes a healthier digestive system, balanced hormones, and improved immunity. From humble kitchens to ancient texts, the power of hing continues to thrive today.</p>
-  </section>
+            <section id="hing-remedies" data-aos="fade-up">
+                <h2>Simple & Effective Hing Home Remedies</h2>
+                <p>Here are some time-tested remedies using our premium Sudha Hing. Always use a pinch, as a little goes a long way!</p>
 
-  <a href="#top" class="top-button">⬆ Scroll to Top</a>
-  <a href="#" class="print-button" onclick="window.print()">🖨 Print This Page</a>
+                <div class="recipe" data-aos="fade-right">
+                    <h4>Hing Water for Digestion</h4>
+                    <p><strong>Remedy for:</strong> Bloating, gas, and indigestion.</p>
+                    <p><strong>Ingredients:</strong> A pinch of Sudha Hing, a glass of warm water, and a squeeze of lemon juice (optional).</p>
+                    <p><strong>Method:</strong> Stir a small pinch of Hing into a glass of warm water until dissolved. Add a squeeze of lemon for flavor and enhanced benefits. Drink this on an empty stomach in the morning or after a heavy meal to soothe your digestive system. It's a simple, yet highly effective daily ritual.</p>
+                </div>
 
-  <footer>
-    <p>&copy; 2025 Rishabh Broom House | Powered by Sudha Hing Remedies</p>
-  </footer>
+                <div class="recipe" data-aos="fade-left">
+                    <h4>Hing Paste for Stomach Pain</h4>
+                    <p><strong>Remedy for:</strong> Abdominal cramps and severe gas pain in children and adults.</p>
+                    <p><strong>Ingredients:</strong> A pinch of Sudha Hing, a few drops of water or warm ghee.</p>
+                    <p><strong>Method:</strong> Mix a small amount of Hing powder with a few drops of water or warm ghee to form a smooth paste. Gently apply this paste around the navel area in a circular motion. This external application is a gentle way to relieve discomfort from gas and cramps.</p>
+                </div>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+                <div class="recipe" data-aos="fade-right">
+                    <h4>Hing Jeera Aloo Curry</h4>
+                    <p><strong>Remedy for:</strong> A delicious, digestion-friendly meal.</p>
+                    <p><strong>Ingredients:</strong> Potatoes, cumin seeds (jeera), a pinch of Sudha Hing, and other spices.</p>
+                    <p><strong>Method:</strong> In a pan with hot oil, temper a pinch of Hing along with cumin seeds. The aroma will instantly fill your kitchen! Add boiled potatoes and other spices. The Hing not only adds a unique savory flavor but also makes the potatoes easier to digest.</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="hing-in-ayurveda" data-aos="fade-up">
+                <h2>Hing's Place in Ayurvedic Tradition</h2>
+                <p>In Ayurveda, Hing is a cherished herb known by its Sanskrit names, including <em>Ramaha</em> (aromatic), <em>Ugragandha</em> (strong odor), and <em>Sahasravedhi</em> (penetrating). It is particularly valued for its potent effects on the doshas:</p>
+                <ul>
+                    <li>It balances the **Vata** and **Kapha** doshas, which are often associated with bloating, gas, and respiratory congestion.</li>
+                    <li>It increases the **Pitta** dosha, which is responsible for digestion and metabolism.</li>
+                </ul>
+                <p>Its heating and pungent qualities make it a powerful tool for improving digestive fire (Agni) and eliminating toxins from the body. It is a key ingredient in many Ayurvedic formulations, such as **Hingvastak Churna**, a blend of eight herbs designed to dramatically improve digestion.</p>
+            </section>
+            
+            <hr>
+
+            <section id="precautions" data-aos="fade-up">
+                <h2>Important Precautions and Disclaimer</h2>
+                <div class="disclaimer">
+                    <p>While Hing is safe for most people, it's important to use it responsibly. **Always consult with a healthcare professional or an Ayurvedic practitioner before using Hing for medicinal purposes, especially if you have a pre-existing health condition.**</p>
+                    <ul>
+                        <li>Pregnant and breastfeeding women should avoid excessive consumption or consult their doctor.</li>
+                        <li>High doses can cause side effects like diarrhea, gas, or allergic reactions.</li>
+                        <li>People with high blood pressure should consume it in moderation.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="text-center" data-aos="fade-up">
+                 <a href="#top" class="top-button">⬆ Back to Top</a>
+            </div>
+
+        </article>
+
+        <aside class="sidebar" data-aos="fade-left">
+            <div id="buy-now">
+                <h3>Why Choose Sudha Hing?</h3>
+                <p>At Rishabh Broom House, we take pride in offering the purest form of Hing. Our Sudha Hing is sourced from the finest quality resins, processed with traditional methods to preserve its potency and flavor. Experience the difference!</p>
+                <a href="https://wa.me/919461331332?text=I%20am%20interested%20in%20buying%20Sudha%20Hing.%20Could%20you%20please%20provide%20more%20information%3F" class="cta-button">Buy Sudha Hing Now</a>
+            </div>
+
+            <hr>
+
+            <div id="hing-facts">
+                <h3>Quick Hing Facts</h3>
+                <ul>
+                    <li>The name 'Asafoetida' comes from 'asa' (Persian for resin) and 'foetida' (Latin for stinking).</li>
+                    <li>Hing is a natural insect repellent.</li>
+                    <li>It is known as the "food of the gods" in some cultures, despite its pungent raw smell.</li>
+                    <li>Hing loses its strong odor when cooked, developing a pleasant, savory, onion-like aroma.</li>
+                </ul>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Rishabh Broom House. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="https://wa.me/919461331332?text=I%20am%20interested%20in%20buying%20Sudha%20Hing.%20Could%20you%20please%20provide%20more%20information%3F">Contact Us</a></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
 </body>
 
 </html>
