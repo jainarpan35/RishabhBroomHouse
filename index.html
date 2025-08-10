@@ -2,334 +2,511 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" type="image/png" href="images/logo.jpg">
-  <title>Rishabh Broom House | Premium Grass Brooms</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <meta name="description" content="Rishabh Broom House - Premium Grass Broom Manufacturer from Banswara since 2009. High-quality eco-friendly handmade brooms for every household.">
-  <meta name="keywords" content="Grass Broom, Banswara Broom, Eco-Friendly Brooms, Rishabh Broom House, Indian Broom Manufacturer">
-  <meta property="og:title" content="Rishabh Broom House">
-  <meta property="og:description" content="Premium Grass Brooms Manufacturer in Banswara, Rajasthan.">
-  <meta property="og:image" content="images/logo.jpg">
-  <meta property="og:url" content="https://rbhbanswara.in">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/logo.jpg">
+    <title>Rishabh Broom House | Premium Brooms & Sudha Hing</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    
+    <meta name="description" content="Rishabh Broom House - Manufacturer of premium grass brooms and pure Sudha Hing in Banswara since 1997. Seeking distributors across Rajasthan, Gujarat, and MP.">
+    <meta name="keywords" content="Grass Broom, Sudha Hing, Banswara Broom, Rishabh Broom House, Broom Manufacturer, Hing Manufacturer, Distributor Opportunities">
+    <meta property="og:title" content="Rishabh Broom House | Quality Since 1997">
+    <meta property="og:description" content="Premium Grass Brooms and Pure Sudha Hing Manufacturer in Banswara, Rajasthan.">
+    <meta property="og:image" content="images/logo.jpg">
+    <meta property="og:url" content="https://rbhbanswara.in">
+    <meta property="og:type" content="website">
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f0f0f0;
-      background-image: url('images/mix-bg.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 60%;
-      background-attachment: fixed;
-      background-blend-mode: lighten;
-      opacity: 0.98;
-    }
+    <style>
+        /* --- CSS Variables for Easy Theming --- */
+        :root {
+            --primary-color: #1e3c72;
+            --secondary-color: #2a5298;
+            --accent-color: #28a745;
+            --text-dark: #2c3e50;
+            --text-light: #ffffff;
+            --bg-light: #f9f9f9;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
 
-    .background-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('images/mix-bg.png') center center no-repeat;
-      background-size: 60%;
-      opacity: 0.07;
-      z-index: -1;
-    }
+        /* --- General & Pre-loader Styles --- */
+        html {
+            scroll-behavior: smooth;
+        }
 
-    header {
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.2rem 2rem;
-      border-bottom: 4px solid #003366;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-      flex-wrap: wrap;
-      border-radius: 0 0 20px 20px;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            color: var(--text-dark);
+            opacity: 0.98;
+        }
+        
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.75s ease, visibility 0.75s ease;
+        }
 
-    .logo, .guru-img {
-      height: 70px;
-      border-radius: 8px;
-    }
+        #preloader img {
+            width: 100px;
+            animation: pulse 1.5s infinite ease-in-out;
+        }
 
-    .header-center {
-      text-align: center;
-      flex-grow: 1;
-    }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
 
-    .header-center h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      font-weight: 800;
-      color: #ffffff;
-      text-shadow: 2px 2px 4px #00000077;
-    }
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/mix-bg.png') center center no-repeat;
+            background-size: 50%;
+            opacity: 0.05;
+            z-index: -1;
+        }
 
-    .header-center p {
-      font-size: 1.1rem;
-      margin: 0;
-      color: #d3e7ff;
-    }
+        /* --- Header Styles --- */
+        header {
+            background: var(--text-light);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            box-shadow: var(--shadow);
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+        
+        header.scrolled {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
 
-    section {
-      padding: 3rem 1rem;
-      text-align: center;
-      background: white;
-    }
+        .logo,
+        .guru-img {
+            height: 60px;
+            border-radius: 8px;
+        }
 
-    .about p, .enhanced-about p {
-      max-width: 900px;
-      margin: 1rem auto;
-      line-height: 1.7;
-    }
+        .header-center {
+            text-align: center;
+            flex-grow: 1;
+        }
 
-    .enhanced-about ul {
-      max-width: 700px;
-      margin: auto;
-      text-align: left;
-    }
+        .header-center h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            margin: 0;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
 
-    .enhanced-about li {
-      margin: 0.5rem 0;
-    }
-.selection-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 3rem 1rem;
-  background: #f9f9f9; /* Changed from blue to light grey */
-}
+        .header-center p {
+            font-size: 1.1rem;
+            margin: 5px 0 0;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
 
-.selection-card {
-  flex: 1 1 350px;
-  max-width: 400px;
-  background: white;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  border: none;
-}
+        /* --- Section Styles --- */
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
 
-.selection-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(to bottom, #ffffff, #f0f8ff);
-}
+        #about {
+            background: transparent;
+            padding-top: 2rem;
+        }
 
-.selection-card img {
-  width: 120px;
-  margin-bottom: 1rem;
-}
+        #about p {
+            max-width: 900px;
+            margin: 1rem auto;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
 
-.selection-card h2 {
-  margin-bottom: 0.5rem;
-  color: #2c3e50;
-  font-size: 1.5rem;
-}
+        /* --- Interactive 3D Card Styles --- */
+        .selection-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 3rem 1rem;
+            background: var(--bg-light);
+            flex-wrap: wrap;
+        }
 
-.selection-card p {
-  font-size: 1rem;
-  color: #555;
-}
-  @media (max-width: 768px) {
-    .selection-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+        .selection-card {
+            flex: 1 1 350px;
+            max-width: 400px;
+            background: white;
+            padding: 2.5rem;
+            text-align: center;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            cursor: pointer;
+            border: 1px solid #eee;
+            /* Added for 3D effect */
+            transform-style: preserve-3d;
+            transition: all 0.2s ease-out;
+        }
 
-  footer {
-    background-color: #2c3e50;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem;
-    flex-wrap: wrap;
-  }
+        .selection-card:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
 
-  .footer-left {
-    flex: 0 0 auto;
-    margin-right: 1.5rem;
-  }
+        .selection-card img {
+            width: 120px;
+            margin-bottom: 1rem;
+            /* Added for 3D effect */
+            transform: translateZ(40px);
+        }
+        
+        .selection-card h2 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            /* Added for 3D effect */
+            transform: translateZ(30px);
+        }
+        
+        .selection-card p {
+            font-size: 1rem;
+            color: #555;
+            /* Added for 3D effect */
+            transform: translateZ(20px);
+        }
 
-  .footer-left img {
-    height: 80px;
-    width: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(255,255,255,0.2);
-  }
+        /* --- Contact Form Styles --- */
+        #contact {
+            background: white;
+        }
 
-  .footer-right {
-    flex: 1;
-    max-width: 600px;
-    text-align: left;
-  }
+        #contact h2, #about h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+        
+        .contact-form {
+            max-width: 600px; 
+            margin: auto; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 1.2rem;
+            text-align: left;
+        }
+        
+        .contact-form input, .contact-form textarea {
+            padding: 1rem; 
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif; 
+            border: 1px solid #ccc; 
+            border-radius: 8px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .contact-form input:focus, .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 8px rgba(42, 82, 152, 0.3);
+        }
+        
+        .contact-form button {
+            padding: 1rem; 
+            background-color: var(--accent-color); 
+            color: white; 
+            font-size: 1.1rem;
+            font-weight: 600; 
+            border: none; 
+            border-radius: 8px; 
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .contact-form button:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
 
-  .footer-right p {
-    margin: 0.5rem 0;
-  }
+        /* --- Footer Styles --- */
+        footer {
+            background-color: var(--text-dark);
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2.5rem 2rem;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
 
-  @media (max-width: 768px) {
-    footer {
-      flex-direction: column;
-      text-align: center;
-    }
+        .footer-left img {
+            height: 80px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+        }
 
-    .footer-right {
-      text-align: center;
-      margin-top: 1rem;
-    }
-  }
-    .whatsapp-float img {
-      width: 60px;
-      height: 60px;
-    }
+        .footer-right {
+            max-width: 600px;
+            text-align: left;
+        }
+        
+        .footer-right p {
+            margin: 0.4rem 0;
+            opacity: 0.9;
+        }
+        .footer-right a {
+            color: #aed6f1;
+            text-decoration: none;
+        }
+        .footer-right a:hover {
+            text-decoration: underline;
+        }
 
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-      .guru-img, .logo {
-        height: 60px;
-      }
-      .header-center h1 {
-        font-size: 2rem;
-      }
-      .header-center p {
-        font-size: 0.95rem;
-      }
-      footer {
-        flex-direction: column;
-        text-align: center;
-      }
-      .footer-right {
-        padding: 1rem 0 0;
-      }
-    }
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    animation: floatWhatsApp 2s infinite ease-in-out;
-  }
+        /* --- Floating Buttons (WhatsApp & Scroll-to-Top) --- */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 998;
+        }
 
-  .whatsapp-float img {
-    width: 60px;
-    height: 60px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-  }
+        .whatsapp-float img {
+            width: 60px;
+            height: 60px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
 
-  .whatsapp-float img:hover {
-    transform: scale(1.1);
-  }
+        .whatsapp-float img:hover {
+            transform: scale(1.1);
+        }
+        
+        #scrollTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 90px;
+            right: 25px;
+            z-index: 998;
+            border: none;
+            outline: none;
+            background-color: var(--secondary-color);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            width: 55px;
+            height: 55px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, opacity 0.3s;
+        }
+        
+        #scrollTopBtn:hover {
+            background-color: var(--primary-color);
+        }
 
-  @keyframes floatWhatsApp {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-5px);
-    }
-  }
+        /* --- Responsive Media Queries --- */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+                gap: 0.5rem;
+            }
 
-  </style>
+            .guru-img, .logo {
+                height: 50px;
+            }
+            .header-center h1 {
+                font-size: 1.8rem;
+            }
+            .header-center p {
+                font-size: 1rem;
+            }
+            
+            section {
+                padding: 3rem 1rem;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-right {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="background-overlay"></div>
-  <header>
-    <img src="images/1.jpg" alt="Guruji" class="guru-img">
-    <div class="header-center">
-      <h1>Rishabh Broom House</h1>
-      <p>Banswara | Since 2009</p>
+    <div id="preloader">
+        <img src="images/logo.jpg" alt="Loading...">
     </div>
-    <img src="images/logo.jpg" alt="RBH Logo" class="logo">
-  </header>
-<section class="about" data-aos="fade-up">
-  <h2>About Us</h2>
-  <p>
-    <strong>Welcome to <span style="color: #06518d;">Rishabh Broom House</span> – Banswara</strong><br />
-    <span style="font-size: 1.2rem; font-weight: bold; color: #2a5298;">Crafting Quality Since 2009</span>
-  </p>
-  <p>
-    At <strong style="color: #1e3c72;">Rishabh Broom House</strong>, we proudly manufacture <span style="font-weight: bold; color: #28a745;">premium quality grass brooms</span>, known for their <em>strength, durability,</em> and traditional craftsmanship. Each broom is carefully handcrafted to ensure <strong>superior cleaning</strong> and <strong>long-lasting use</strong>.
-  </p>
-  <p>
-    We also produce <strong style="color: #b44b00;">Sudha Hing</strong>, a trusted name in <span style="color: #ff6600;">pure and aromatic asafoetida</span>, perfect for bringing <em>rich, authentic flavor</em> to your kitchen.
-  </p>
-  <p>
-    With a strong customer base spread across a <strong>200 km radius</strong> around Banswara—including parts of <strong>Rajasthan, Gujarat,</strong> and <strong>Madhya Pradesh</strong>—we have earned the trust of <span style="color: #2c3e50;">households, retailers,</span> and <span style="color: #2c3e50;">wholesalers</span> alike.
-  </p>
-  <p>
-    <strong style="color: #003366;">Now, we are looking to expand our reach</strong> and are actively seeking <span style="color: #dc3545; font-weight: bold;">distributors and dealer partners</span> who share our commitment to <em>quality and customer satisfaction</em>.
-  </p>
-  <p>
-    <span style="font-size: 1.1rem; font-weight: 600; color: #06518d;">Join hands with Rishabh Broom House – where <em>tradition meets trust</em>.</span>
-  </p>
-</section>
 
-  
-<div class="selection-container">
-  <div class="selection-card" onclick="location.href='rbh.html'">
-    <img src="images/broom-bg.png" alt="Broom Icon">
-    <h2>Explore Broom Products</h2>
-    <p>View our <strong>premium grass broom</strong> collections since <strong>2009</strong>.</p>
-  </div>
-  <div class="selection-card" onclick="location.href='hing.html'">
-    <img src="images/logo.png" alt="Hing Icon">
-    <h2>Explore Sudha Hing</h2>
-    <p>Discover <strong>pure & aromatic</strong> asafoetida for every kitchen.</p>
-  </div>
-</div>
+    <div class="background-overlay"></div>
 
+    <header id="main-header">
+        <img src="images/1.jpg" alt="Guruji" class="guru-img">
+        <div class="header-center">
+            <h1>Rishabh Broom House</h1>
+            <p>Banswara | <span id="typing-effect"></span></p>
+        </div>
+        <img src="images/logo.jpg" alt="RBH Logo" class="logo">
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                <strong>Welcome to <span style="color: #06518d;">Rishabh Broom House</span> – Banswara</strong>
+            </p>
+            <p>
+                At <strong style="color: var(--primary-color);">Rishabh Broom House</strong>, we proudly manufacture <span style="font-weight: bold; color: var(--accent-color);">premium quality grass brooms</span>, known for their <em>strength, durability,</em> and traditional craftsmanship. Each broom is carefully handcrafted to ensure <strong>superior cleaning</strong> and <strong>long-lasting use</strong>.
+            </p>
+            <p>
+                We also produce <strong style="color: #b44b00;">Sudha Hing</strong>, a trusted name in <span style="color: #ff6600;">pure and aromatic asafoetida</span>, perfect for bringing <em>rich, authentic flavor</em> to your kitchen.
+            </p>
+            <p>
+                With a strong customer base across <strong>Rajasthan, Gujarat,</strong> and <strong>Madhya Pradesh</strong>, we have earned the trust of households and retailers alike. <strong style="color: #003366;">Now, we are looking to expand</strong> and are actively seeking <span style="color: #dc3545; font-weight: bold;">distributors and dealer partners</span> who share our commitment to quality.
+            </p>
+            <p>
+                <span style="font-size: 1.1rem; font-weight: 600; color: var(--secondary-color);">Join hands with us – where <em>tradition meets trust</em>.</span>
+            </p>
+        </section>
 
-  <section class="contact" data-aos="fade-up" style="background: white; padding: 3rem 1rem; text-align: center;">
-  <h2>Contact Us</h2>
-  <form action="https://formspree.io/f/mldnaqed" method="POST" style="max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 1rem;">
-    <input type="text" name="name" placeholder="Your Name" required style="padding: 0.8rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px;" />
-    <input type="text" name="contact number" placeholder="Your Contact Number" required style="padding: 0.8rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px;" />
-    <input type="email" name="email" placeholder="Your Email" required style="padding: 0.8rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px;" />
-    <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 0.8rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px;"></textarea>
-    <button type="submit" style="padding: 0.8rem; background-color: #28a745; color: white; font-size: 1rem; border: none; border-radius: 6px; cursor: pointer;">Send Message</button>
-  </form>
-</section>
-  <a href="https://wa.me/919461331332" class="whatsapp-float" target="_blank">
-  <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="WhatsApp Button">
-</a>
+        <div class="selection-container">
+            <div class="selection-card" onclick="location.href='rbh.html'">
+                <img src="images/broom-bg.png" alt="Broom Icon">
+                <h2>Explore Broom Products</h2>
+                <p>View our <strong>premium grass broom</strong> collections since <strong>1997</strong>.</p>
+            </div>
+            <div class="selection-card" onclick="location.href='hing.html'">
+                <img src="images/logo.png" alt="Hing Icon">
+                <h2>Explore Sudha Hing</h2>
+                <p>Discover <strong>pure & aromatic</strong> asafoetida for every kitchen.</p>
+            </div>
+        </div>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <footer>
-  <div class="footer-left">
-    <img src="images/4.jpg" alt="Sudha Ba" />
-  </div>
-  <div class="footer-right">
-    <p><strong>Rishabh Broom House</strong></p>
-<p> Dahod Road, Banswara, Rajasthan - 327001</p>
-    <p>Phone: +91-9461331332, +91-9887801332 | Email: jainarpan35@gmail.com</p>
-  </div>
-</footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/mldnaqed" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="text" name="contact_number" placeholder="Your Contact Number" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
+    <a href="https://wa.me/919461331332" class="whatsapp-float" target="_blank">
+        <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="WhatsApp Button">
+    </a>
+    <button id="scrollTopBtn" title="Go to top">↑</button>
 
+    <footer>
+        <div class="footer-left">
+            <img src="images/4.jpg" alt="Sudha Ba" />
+        </div>
+        <div class="footer-right">
+            <p><strong>Rishabh Broom House</strong></p>
+            <p>Dahod Road, Banswara, Rajasthan - 327001</p>
+            <p>
+                Phone: <a href="tel:+919461331332">+91-9461331332</a>, <a href="tel:+919887801332">+91-9887801332</a>
+            </p>
+            <p>
+                Email: <a href="mailto:jainarpan35@gmail.com">jainarpan35@gmail.com</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        $(document).ready(function() {
+            // --- Pre-loader ---
+            $(window).on('load', function() {
+                $('#preloader').fadeOut(750, function() {
+                    $(this).css('visibility', 'hidden');
+                });
+            });
+
+            // --- Sticky Header on Scroll ---
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('#main-header').addClass('scrolled');
+                } else {
+                    $('#main-header').removeClass('scrolled');
+                }
+            });
+
+            // --- Typed.js for Dynamic Text ---
+            new Typed('#typing-effect', {
+                strings: ['Since 2009', 'Quality You Can Trust', 'Handcrafted with Care'],
+                typeSpeed: 70,
+                backSpeed: 40,
+                loop: true
+            });
+
+            // --- 3D Interactive Card Tilt Effect ---
+            $('.selection-card').on('mousemove', function(e) {
+                let rect = this.getBoundingClientRect();
+                let x = e.clientX - rect.left;
+                let y = e.clientY - rect.top;
+                let width = rect.width;
+                let height = rect.height;
+
+                let rotateX = -1 * ((y - height / 2) / (height / 2)) * 10; // Max rotation 10deg
+                let rotateY = ((x - width / 2) / (width / 2)) * 10;
+
+                $(this).css({
+                    'transform': `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`
+                });
+            }).on('mouseleave', function() {
+                $(this).css({
+                    'transform': 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)'
+                });
+            });
+            
+            // --- Scroll to Top Button ---
+            let scrollTopBtn = $('#scrollTopBtn');
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 300) {
+                    scrollTopBtn.fadeIn();
+                } else {
+                    scrollTopBtn.fadeOut();
+                }
+            });
+            scrollTopBtn.click(function() {
+                $('html, body').animate({scrollTop: 0}, 500);
+            });
+        });
+    </script>
 </body>
 
 </html>
